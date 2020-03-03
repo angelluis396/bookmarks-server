@@ -1,0 +1,7 @@
+{"message":"Bookmark with id 1 not found.","level":"error"}
+{"message":"Bookmark with id id not found.","level":"error"}
+{"message":"URL is required","level":"error"}
+{"message":"URL is required","level":"error"}
+{"message":"Bookmark with id 96627858-ee45-4ccc-adb6-0093c825aaa1 not found.","level":"error"}
+{"message":"Bookmark with id 96627858-ee45-4ccc-adb6-0093c825aaa1 not found.","level":"error"}
+{"message":"Bookmark with id 63ef4aef-e8fa-42cf-9738-4b6611ff4d3f was deleted.","level":"info"}
