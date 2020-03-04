@@ -4,7 +4,7 @@ const bodyParser = express.json();
 const uuid = require('uuid/v4');
 const logger = require('../logger');
 const {bookmarks} = require ('../store');
-const { isWebUri } = require('valid-url')
+const { isWebUri } = require('valid')
 
 bookmarksRouter
 .route('/bookmarks')
@@ -12,7 +12,7 @@ bookmarksRouter
     res.json(bookmarks);
   })
   .post(bodyParser, (req, res) => {
-    for (const field of ['title', 'url']) {
+    for (const field of ['title', 'url', 'rating']) {
       if (!req.body[field]) {
         logger.error(`${field} is required`)
         return res.status(400).send(`'${field}' is required`)

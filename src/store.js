@@ -4,13 +4,15 @@ const bookmarks = [
   {
     id: uuid(),
     title:"Google",
-    url: "https://google.com"
+    url: "https://google.com",
+    rating: 5
   },
 
   {
     id: uuid(),
     title: "MSN",
-    url: "https://msn.com"
+    url: "https://msn.com",
+    rating: 2
   },
 ];
 
