@@ -4,7 +4,7 @@ const bodyParser = express.json();
 const uuid = require('uuid/v4');
 const logger = require('../logger');
 const {bookmarks} = require ('../store');
-const { isWebUri } = require('valid')
+const { isWebUri } = require('valid-url')
 
 bookmarksRouter
 .route('/bookmarks')
@@ -32,7 +32,7 @@ bookmarksRouter
 
     const bookmark = { id: uuid(), title, url, description, rating }
 
-    store.bookmarks.push(bookmark)
+    bookmarks.push(bookmark)
 
     logger.info(`Bookmark with id ${bookmark.id} created`)
       res
